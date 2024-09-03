@@ -108,7 +108,7 @@ def main():
                 balls.remove(ball)
         pygame.display.flip()
         # 每隔50毫秒就改变球的位置再刷新窗口
-        pygame.time.delay(50)
+        pygame.time.delay(20)
         for ball in balls:
             ball.move(screen)
             # 检查球有没有吃到其他的球
