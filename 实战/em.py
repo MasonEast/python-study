@@ -28,7 +28,7 @@ def main():
     message.attach(MIMEText('用Python发送邮件的示ddd例代码', 'plain', 'utf-8'))
 
     smtper = SMTP_SSL('smtp.qq.com', 465)
-    smtper.login(sender, 'yqcepmrnuomqbgej')
+    smtper.login(sender, 'xyqcepmrnuomqbgejxxx')
     smtper.sendmail(sender, receivers, message.as_string())
     print('邮件发送完成!')
 

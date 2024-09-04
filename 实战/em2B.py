@@ -14,7 +14,7 @@ import base64
 def main():
 
     # 请自行修改下面的邮件发送者和接收者
-    sender = 'liu-jf@primeton.com'
+    sender = '邮箱'
 
     sender_name = base64.b64encode('老枪'.encode('utf-8')).decode('utf-8')
 
@@ -28,7 +28,7 @@ def main():
     message.attach(MIMEText('用Python发送邮件的示ddd例代码', 'plain', 'utf-8'))
 
     smtper = SMTP_SSL('smtp.exmail.qq.com', 465)
-    smtper.login(sender, 'Ljf941118')
+    smtper.login(sender, '密码')
     smtper.sendmail(sender, receivers, message.as_string())
     print('邮件发送完成!')
 
