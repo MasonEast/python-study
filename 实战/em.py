@@ -1,3 +1,9 @@
+"""
+发邮件注意事项：
+1. 发件人要打开SMTP服务；
+2. 要了解发件邮箱的SMTP服务的连接方式，域名等；
+3. From，to 要符合邮箱发件规范；
+"""
 from smtplib import SMTP_SSL
 from email.header import Header
 from email.mime.text import MIMEText
